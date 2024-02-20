@@ -7,6 +7,8 @@ export default function App() {
       <UserPage />
       <Routes>
         <Route path="/users/:username" element={<UserPage />} />
+        <Route path="posts" element={<UserPostsPage />} />
+        <Route path="likes" element={<UserLikesPage />} />
       </Routes>
     </div>
   );
